@@ -6,19 +6,81 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="headerContainer"></div>
+    <div id="header">
+        <img src="../resources/radar.svg" alt="">
+        <h1 id="heading">WeatherServe</h1>
+    </div>
     <div id="container">
-        <h1>ClimaCast</h1>
         <div id="content">
-            <div id="top">
-                <div id="search">
-                    <form  id ="form" action="">
-                        <button id="submitButton" type="submit"></button>
-                        <input type="text" name="inputSearch" id="inputSearch" placeholder="Location">
-                    </form>
-                </div>
+            <div id="search">
+                <form  id ="form" action="">
+                    <button id="submitButton" type="submit"></button>
+                    <input type="text" name="inputSearch" id="inputSearch" placeholder="Location">
+                </form>
             </div>
             <div id="results">
-    
+                <div id="top">
+                    <h1 id="city">Vancouver</h1>
+                    <h6 id="distCountry">(Dist, Country)</h6>
+                    <h6 id="time">Local Time: </h6>
+                </div>
+                <div id="mid">
+                    <div >
+                        <div class="weather">
+                            <div class="row1">
+                                <img src="../resources/thermometer.svg" alt="">
+                                <h1>Temperature</h1>
+                            </div>
+                            <h3 id="temperature">Details</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="weather">
+                            <div class="row1">
+                                <img id="conditionIcon" src="../resources/thermometer.svg" alt="">
+                                <h1>Conditions</h1>
+                            </div>
+                            <h3 id="conditions">Details</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="weather">
+                            <div class="row1">
+                                <img src="../resources/gauge.svg" alt="">
+                                <h1>Pressure</h1>
+                            </div>
+                            <h3 id="pressure">Details</h3>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="weather">
+                            <div class="row1">
+                                <img src="../resources/water.svg" alt="">
+                                <h1>Humidity</h1>           
+                            </div>
+                            <h3 id="humidity">Details</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="weather">
+                            <div class="row1">
+                                <img src="../resources/weather-pouring.svg" alt="">
+                                <h1>Precipitation</h1>          
+                            </div>
+                            <h3 id="precipitation">Details</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="weather">
+                            <div class="row1">
+                                <img src="../resources/weather-windy.svg" alt="">
+                                <h1>Wind</h1>      
+                            </div>
+                            <h3 id="wind">Details</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
